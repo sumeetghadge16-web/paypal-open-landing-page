@@ -1,0 +1,87 @@
+:root {
+  --color-bg: #ffffff;
+  --color-text-main: #0c0c0d;
+  --color-text-secondary: #2c2e30;
+  --color-text-muted: #595f69;
+  
+  --color-btn-dark: #000000;
+  --color-btn-dark-hover: #1f2328;
+  --color-btn-dark-active: #000000;
+  
+  --color-btn-light: #f0f2f5;
+  --color-btn-light-hover: #e2e6eb;
+  --color-btn-light-active: #d6dbe1;
+  
+  --color-pill-track: #eef1f4;
+  --color-pill-active-bg: #ffffff;
+  
+  --color-nav-hover: #f4f6f8;
+  --color-border-subtle: #eaecee;
+  
+  --color-paypal-dark: #002c8a;
+  --color-paypal-mid: #00457c;
+  --color-paypal-light: #0079c1;
+  
+  --font-family-base: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --transition-smooth: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--color-bg);
+  color: var(--color-text-main);
+  font-family: var(--font-family-base);
+  line-height: 1.5;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid #0050e6;
+  outline-offset: 3px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
